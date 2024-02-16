@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Calculadora</title>
+    <link rel="stylesheet" href="_css/css.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="left-section">
+        <img src="_img/302310103-30a4a080-3bb1-4dba-a3b0-708c0f9da18d.png" alt="Logo 1" width="300px">
+       
+        <h1>Pneumatica</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="unlock-section no-blur">
+      <label for="unlockCode">Insira o código:</label>
+      <input type="text" id="unlockCode" class="unlock-input" placeholder="Código">
+      <button onclick="checkAndUnlock()" class="unlock-button">unlock</button>
+    </div>
+    <div id="calculator" class="calculator-content">
+      <div class="calculator-inputs">
+        <input type="number" id="force" class="calculator-input" placeholder="Força (N)" disabled>
+        <input type="number" id="area" class="calculator-input" placeholder="Área (m²)" disabled>
+      </div>
+      <button onclick="calculatePressure()" class="calculator-button" disabled>Calcular Pressão</button>
+      <p id="result" class="calculator-result"></p>
+    </div>
+<br>
+<br>
+<br>
+
+<div class="text">
+  <div id="text1">
+    <h1>Pressão na Pneumática</h1>
+  <p>Na pneumática, a pressão desempenha um papel fundamental no funcionamento e na eficiência dos sistemas que utilizam ar comprimido para realizar trabalho mecânico. 
+    Compreender como a pressão é aplicada e controlada é essencial para projetar e operar sistemas pneumáticos de forma segura e eficaz.
+    
+    A pressão do ar é uma medida da força exercida pelo ar em uma determinada área. 
+    
+    Em sistemas pneumáticos, a pressão é frequentemente expressa em unidades como KiloPascal (KPa), Newton por metro quadrado (N/m²) ou bar. Essas unidades descrevem a quantidade de força exercida pelo ar em uma área específica.
+    Fórmula da Pressão:A pressão (P) é calculada utilizando a seguinte 
+    </p>
+    <img src="_img/Captura de tela 2024-02-16 095841.png" class="img" alt="" width="">
+    <h1>Onde:</h1>
+    <p>
+      <p>* é a pressão em unidades de pressão (KPa, N/m², bar),</p>
+      <p>* F é a força aplicada pelo ar em Newtons (N), e</p>
+     <p>* A é a área sobre a qual a força é aplicada em metros quadrados (m²).</p>
+      
+      A pressão do ar é determinante para a capacidade de realizar trabalho nos sistemas pneumáticos. Quanto maior a pressão aplicada,
+       maior será a força gerada pelo ar comprimido sobre os componentes do sistema. Portanto, compreender e controlar a pressão é crucial para
+        garantir que os cilindros pneumáticos e outros dispositivos operem conforme o esperado.</p>
+      </div>
+     
+</div>
+<div class="text">
+    <div id="text2"> 
+        <h1>Forças</h1>
+        <p>As forças realizadas pelos cilindros dependem da pressão do ar, da área do êmbolo e das resistências impostas pelos elementos de vedação. Abaixo, são apresentadas as fórmulas de acordo com o tipo de cilindro</p>
+          <p> A força exercida pelo cilindro é calculada segundo a Equação 1 abaixo:</p>
+          <img src="_img/Captura de tela 2024-02-16 101641.png" class="img" alt="">
+          <h1>Onde:</h1>
+          <p>Ft = Força teórica do êmbolo (N) </p>
+          <p>A = Superfície útil do êmbolo (cm²) </p>
+          <p>P = Pressão de trabalho (KPa, 105  N/ m2, bar) </p>
+      </div>
+    </div>
+</main>
+  <footer>
+      © 2024 Minha Sala Virtual
+  </footer>
+
+  <script src="_js/script.js"></script>
+</body>
+
+</html>
